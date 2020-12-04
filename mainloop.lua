@@ -973,7 +973,7 @@ function main_local_vs()
       local now = os.date("*t",to_UTC(os.time()))
       local sep = "/"
       local path = "replays"..sep.."v"..VERSION..sep..string.format("%04d"..sep.."%02d"..sep.."%02d", now.year, now.month, now.day)
-      path = path.."local-vs"
+      path = path.."/local-vs"
       local filename = "v"..VERSION.."-"..string.format("%04d-%02d-%02d-%02d-%02d-%02d", now.year, now.month, now.day, now.hour, now.min, now.sec).."-".."local-vs"
       if outcome_claim == 1 or outcome_claim == 2 then
         filename = filename.."-P"..outcome_claim.."wins"
